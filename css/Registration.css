@@ -1,60 +1,83 @@
-.container{
+.container {
     margin: auto;
-    margin-top: 5%;
-    height: fit-content;
-    width: 25%;
+    margin-top: 3%;
+    padding: 30px 25px;
+    width: 35%;
     background-color: whitesmoke;
-    border-radius: 7px;
-
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.Registration-form{
+.Registration-form {
     display: flex;
     justify-content: center;
-    padding: 10px;
-    font-size: large;
+    padding: 10px 0 20px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.text-input{
-    font-size: large;
-    outline: none;
-    padding: 10px;
-    margin-right: 10px;
+.text-input {
+    margin-bottom: 20px;
 }
 
-.text-input h3{
+.text-input h3 {
+    padding-left: 7px;
     margin: 0;
+    font-size: 16px;
 }
 
-.text-input input{
-    padding: 5px;;
+.text-input input {
+    padding: 10px;
     width: 100%;
+    border: 1px solid #ccc;
     border-radius: 8px;
-    font-size: medium;
+    font-size: 16px;
 }
 
-.passwords{
+.passwords {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
+.passwords .text-input {
+    flex: 1;
+}
 
-.gender , h3{
+.genders {
+    margin-bottom: 20px;
+}
+
+.gender , h3 {
     margin: 10px;
-    display: inline;
 }
 
-.submit-btn{
+.gender-options {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.submit-btn {
     display: flex;
     justify-content: center;
-    padding: 15px;
 }
 
-.submit-btn button{
+.submit-btn button {
     width: 100%;
-    font-size: larger;
-    border-radius: 15px;
-    background-color:#84c9f1 ;
-    color:white;
-    text-decoration: none;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    background-color: #84c9f1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn button:hover {
+    background-color: #5ab3e6;
 }

@@ -21,37 +21,40 @@
             <h1>Registration form</h1>
         </div>
         <div class="text-input">
-            <label for="form"><h3>full name</h3></label><br>
-            <input type="text" placeholder="full name">
+            <label for="full name"><h3>full name</h3></label><br>
+            <input type="text" placeholder="full name" id="full name">
         </div>
         <div class="text-input">
-            <label for="form"><h3>email address</h3></label><br>
-            <input type="email" placeholder="email">
+            <label for="email"><h3>email address</h3></label><br>
+            <input type="email" placeholder="email" id="email">
         </div>
         <div class="text-input">
-            <label for="form"><h3>date of birth</h3></label><br>
-            <input type="date" placeholder="date of birth">
+            <label for="dob"><h3>date of birth</h3></label><br>
+            <input type="date" placeholder="date of birth" id="dob">
         </div>
         <div class="passwords">
             <div class="text-input">
-                <label for="form"><h3>password</h3></label><br>
-                <input type="password" placeholder="password">
+                <label for="password"><h3>password</h3></label><br>
+                <input type="password" placeholder="password" id="password">
             </div>
             <div class="text-input">
-                <label for="form"><h3>confirm password</h3></label><br>
-                <input type="password" placeholder="confirm password">
+                <label for="conpassword"><h3>confirm password</h3></label><br>
+                <input type="password" placeholder="confirm password" id="conpassword">
             </div>
         </div>
         <div class="genders">
             <h3>Gender:</h3>
-            <div class="gender">
-                <input type="radio" name="gender" id="check-male">
-                <label for="check-male">male</label>
+            <div class="gender-options">
+                <div class="gender">
+                    <input type="radio" name="gender" id="check-male">
+                    <label for="check-male">Male</label>
+                </div>
+                <div class="gender">
+                    <input type="radio" name="gender" id="check-female">
+                    <label for="check-female">Female</label>
+                </div>
             </div>
-            <div class="gender">
-                <input type="radio" name="gender" id="check-female">
-                <label for="check-female">female</label>
-            </div>
+        </div>
             <div class="submit-btn">
                 <button>submit</button>
             </div>
