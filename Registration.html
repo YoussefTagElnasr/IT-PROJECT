@@ -4,6 +4,9 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/Registration.css">
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <title>Registration</title>
 </head>
 <body>
@@ -33,13 +36,17 @@
             <input type="date" placeholder="date of birth" id="dob">
         </div>
         <div class="passwords">
-            <div class="text-input">
-                <label for="password"><h3>password</h3></label><br>
-                <input type="password" placeholder="password" id="password">
+            <div class="text-input password-wrapper">
+                <label for="password"><h3>Password</h3></label><br>
+                <div class="password-field">
+                    <input type="password" placeholder="Password" id="password">
+                </div>
             </div>
-            <div class="text-input">
-                <label for="conpassword"><h3>confirm password</h3></label><br>
-                <input type="password" placeholder="confirm password" id="conpassword">
+            <div class="text-input password-wrapper">
+                <label for="conpassword"><h3>Confirm Password</h3></label><br>
+                <div class="password-field">
+                    <input type="password" placeholder="Confirm Password" id="conpassword">
+                </div>
             </div>
         </div>
         <div class="genders">
