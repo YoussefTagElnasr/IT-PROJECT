@@ -1,0 +1,60 @@
+.container{
+    margin: auto;
+    margin-top: 5%;
+    height: fit-content;
+    width: 25%;
+    background-color: whitesmoke;
+    border-radius: 7px;
+
+}
+
+.Registration-form{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: large;
+}
+
+.text-input{
+    font-size: large;
+    outline: none;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.text-input h3{
+    margin: 0;
+}
+
+.text-input input{
+    padding: 5px;;
+    width: 100%;
+    border-radius: 8px;
+    font-size: medium;
+}
+
+.passwords{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.gender , h3{
+    margin: 10px;
+    display: inline;
+}
+
+.submit-btn{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.submit-btn button{
+    width: 100%;
+    font-size: larger;
+    border-radius: 15px;
+    background-color:#84c9f1 ;
+    color:white;
+    text-decoration: none;
+}
