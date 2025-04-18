@@ -37,12 +37,15 @@ html, body {
     border-radius: 20px;
 }
 
-.services:hover {
+.services-header:hover{
     background-color: rgba(255, 255, 255, 0.2);
-    font-size: larger;
     color: #f0f0f0;
 }
 
+.contact-header:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #f0f0f0;
+}
 
 .log-in{
     margin-right: 20px;
@@ -52,7 +55,6 @@ html, body {
 }
 
 .log-in:hover {
-    font-size: larger;
     background-color: rgba(255, 255, 255, 0.2);
     transform: scale(1.1);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
