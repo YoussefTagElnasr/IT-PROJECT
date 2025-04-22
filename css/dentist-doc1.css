@@ -1,0 +1,85 @@
+body {
+    background-color: rgb(4, 5, 88);
+    box-sizing: border-box;
+}
+
+.doc-info {
+    background-color: white;
+    border: 1px solid white;
+    height: 25em;
+    width: 60em;
+    display: flex;
+    justify-content: left;
+    margin: 50px 150px;
+    border-radius: 30px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.doc-info img {
+    padding: 20px;
+    width: fit-content;
+    object-fit: cover;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.doc-text {
+    margin: 30px -20px;
+    font-size: 1.5em;
+}
+
+.doc-name {
+    font-size: 1.7em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.horizontal-line {
+    height: 4px;
+    background-color: black;
+    border: none;
+    margin: 5px 0 10px;
+}
+
+.doc-bio {
+    margin-right: 20px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    line-height: 1.4;
+}
+
+.box-info {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    height: 100em;
+    width: 80em;
+    align-items: center;
+    border-radius: 30px;
+    margin-left: 300px;
+    flex-wrap: wrap;
+}
+
+.nav {
+    width: 100%;
+    background-color: rgb(4, 5, 88);
+    display: flex;
+    justify-content: center;
+    height: 90em;
+    width: 15em;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 320px;
+    margin-top: -95em;
+}
+
+.social a {
+    padding: 10px;
+    padding-top: 10px;
+}

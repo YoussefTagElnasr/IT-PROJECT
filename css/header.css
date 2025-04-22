@@ -1,8 +1,9 @@
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Inria Sans' ;
+    font-family: 'Inria Sans';
 }
 
 * {
@@ -28,6 +29,7 @@ html, body {
 }
 
 .links a {
+    display: inline-block;
     text-decoration: none;
     font-size: 18px;
     color: #f0f0f0;
@@ -37,17 +39,24 @@ html, body {
     border-radius: 20px;
 }
 
-.services-header:hover{
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #f0f0f0;
+.left-links:hover {
+    transition: .3s ease;
+    transform: scale(1.1);
 }
 
-.contact-header:hover{
+.services-header:hover {
     background-color: rgba(255, 255, 255, 0.2);
     color: #f0f0f0;
+    transform: scale(1.1);
 }
 
-.log-in{
+.contact-header:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #f0f0f0;
+    transform: scale(1.1);
+}
+
+.log-in {
     margin-right: 20px;
     background-color: #4e9fcf;
     padding: 10px 20px;
@@ -60,6 +69,6 @@ html, body {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.header img{
+.header img {
     width: 50px;
 }
