@@ -1,85 +1,117 @@
-body {
-    background-color: rgb(4, 5, 88);
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-
-.doc-info {
-    background-color: white;
-    border: 1px solid white;
-    height: 25em;
-    width: 60em;
-    display: flex;
-    justify-content: left;
-    margin: 50px 150px;
-    border-radius: 30px;
-    overflow: hidden;
-    object-fit: cover;
-}
-
-.doc-info img {
-    padding: 20px;
-    width: fit-content;
-    object-fit: cover;
+    scroll-behavior: smooth;
 }
 
 .content {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.doc-card {
+    background-color: rgb(12, 99, 170);
+    width: 90%;
+    height: 100vh;
+    margin-top: 30px;
+    box-shadow: 0 5px 20px rgba(1 1 1 / 50%);
+    text-align: center;
+    padding: 20px;
+    border-radius: 70px;
+}
+
+.doc-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 200px;
+    color: aliceblue;
 }
 
 .doc-text {
-    margin: 30px -20px;
-    font-size: 1.5em;
-}
-
-.doc-name {
-    font-size: 1.7em;
-    font-weight: bold;
+    color: aliceblue;
+    font-size: 25px;
     letter-spacing: 1px;
+    font-weight: 700;
     display: inline-block;
+    justify-content: center;
+    margin-top: 25px;
+}
+.doc-text span {
+    color: aliceblue;
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-weight: 700;
 }
 
-.horizontal-line {
-    height: 4px;
-    background-color: black;
-    border: none;
-    margin: 5px 0 10px;
+.doc-text .title h2 {
+    font-size: 21px;
+    letter-spacing: 4px;
+    padding: 2px;
+    margin: 2px;
 }
 
-.doc-bio {
-    margin-right: 20px;
-    overflow-wrap: break-word;
-    word-break: break-word;
-    line-height: 1.4;
+.title:hover {
+    transition: .5s ease;
+    transform: scale(1.1);
+    color:rgb(164, 207, 241) ;
 }
 
-.box-info {
-    width: 100%;
-    background-color: white;
+.social-icons {
     display: flex;
     justify-content: center;
-    height: 100em;
-    width: 80em;
-    align-items: center;
-    border-radius: 30px;
-    margin-left: 300px;
-    flex-wrap: wrap;
-}
-
-.nav {
-    width: 100%;
-    background-color: rgb(4, 5, 88);
-    display: flex;
-    justify-content: center;
-    height: 90em;
-    width: 15em;
-    align-items: center;
-    border-radius: 10px;
-    margin-left: 320px;
-    margin-top: -95em;
-}
-
-.social a {
+    font-size: 17px;
     padding: 10px;
-    padding-top: 10px;
 }
+
+.social-icons a{
+    margin-right: 10px;
+}
+
+.social-icons:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.hr {
+    border: none;             
+    height: 4px;              
+    background-color: aliceblue;   
+    margin: 20px auto;
+    width: 50%;
+}
+
+.about {
+    color: rgb(194, 220, 243);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.about span {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.hr2 {
+    border: none;             
+    height: 4px;              
+    background-color: aliceblue;   
+    margin: 30px auto 0;
+    width: 50%;
+}
+
+.doc-bio p {
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    color: aliceblue;
+    font-size: 30px;
+    width: 75%;
+    line-height: 1.6;
+}
+
