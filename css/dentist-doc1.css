@@ -13,7 +13,7 @@
 }
 
 .blue-background {
-    background-color: rgb(12, 99, 170);
+    background-color: #226597;
     width: 90%;
     min-height: 100vh;
     margin-top: 30px;
@@ -28,11 +28,11 @@
     justify-content: center;
     margin-top: 50px;
     font-size: 200px;
-    color: aliceblue;
+    color: #F3F9FB;
 }
 
 .doc-text {
-    color: aliceblue;
+    color: #F3F9FB;
     font-size: 25px;
     letter-spacing: 1px;
     font-weight: 700;
@@ -41,7 +41,7 @@
     margin-top: 25px;
 }
 .doc-text span {
-    color: aliceblue;
+    color: #F3F9FB;
     font-size: 45px;
     letter-spacing: 1px;
     font-weight: 700;
@@ -57,7 +57,7 @@
 .title:hover {
     transition: .5s ease;
     transform: scale(1.1);
-    color:rgb(164, 207, 241) ;
+    color:#87C0CD;
 }
 
 .social-icons {
@@ -79,13 +79,13 @@
 .hr {
     border: none;             
     height: 4px;              
-    background-color: aliceblue;   
+    background-color: #F3F9FB;   
     margin: 20px auto;
     width: 50%;
 }
 
 .about {
-    color: rgb(194, 220, 243);
+    color: #F3F9FB;
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -99,7 +99,7 @@
 .hr2 {
     border: none;             
     height: 4px;              
-    background-color: aliceblue;   
+    background-color: #F3F9FB;   
     margin: 30px auto 0;
     width: 50%;
 }
@@ -109,7 +109,7 @@
     justify-content: center;
     text-align: center;
     margin-top: 20px;
-    color: aliceblue;
+    color: #F3F9FB;
     font-size: 30px;
     width: 75%;
     line-height: 1.6;
@@ -123,7 +123,7 @@
 }
 
 .doc-card {
-    background-color: aliceblue;
+    background-color: #F3F9FB;
     width: 21.25em;
     margin-top: 30px;
     margin-right: 25px;
@@ -136,16 +136,26 @@
 .doc-card:hover {
     transform: scale(1.1);
     transition: .5s ease;
+    .doc-card-icon,
+    .doc-card-info h3 {
+        transition: .5s ease;
+        color: #113F67;
+    }
+
+    .book-btn {
+        background-color: #113F67;
+        transition: .5s ease;
+    }
 }
 
 .doc-card-icon {
-    color: rgb(12, 99, 170);
+    color: #226597;
     font-size: 7.5em;
     padding-top: 20px;
 }
 
 .doc-card-info h3 {
-    color: rgb(12, 99, 170);
+    color: #226597;
     font-size: 35px;
     margin-top: 10px;
     margin-bottom: 15px;
@@ -159,7 +169,7 @@
 }
 
 .doc-card-info .clinic-name {
-    color: rgb(12, 99, 170);
+    color: #226597;
     font-size: 35px;
     margin-top: 10px;
     margin-bottom: 15px;
@@ -167,8 +177,8 @@
 
 .book-btn {
     text-decoration: none;
-    background-color:rgb(12, 99, 170) ;
-    color: aliceblue;
+    background-color:#226597 ;
+    color: #F3F9FB;
     padding: 10px;  
     border-radius: 15px;
     display: inline-block;
