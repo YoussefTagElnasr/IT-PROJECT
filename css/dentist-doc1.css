@@ -41,6 +41,7 @@
     justify-content: center;
     margin-top: 25px;
 }
+
 .doc-text span {
     color: #F3F9FB;
     font-size: 45px;
@@ -58,7 +59,7 @@
 .title:hover {
     transition: .5s ease;
     transform: scale(1.1);
-    color:#87C0CD;
+    color: #87C0CD;
 }
 
 .social-icons {
@@ -68,21 +69,13 @@
     padding: 10px;
 }
 
-.social-icons a{
+.social-icons a {
     margin-right: 10px;
 }
 
 .social-icons:hover {
     transform: scale(1.1);
     transition: .5s ease;
-}
-
-.hr {
-    border: none;             
-    height: 4px;              
-    background-color: #F3F9FB;   
-    margin: 20px auto;
-    width: 50%;
 }
 
 .about {
@@ -97,11 +90,13 @@
     font-size: 30px;
 }
 
+.hr,
 .hr2 {
-    border: none;             
-    height: 4px;              
-    background-color: #F3F9FB;   
-    margin: 30px auto 0;
+    border: none;
+    height: 4px;
+    /* background-color: #F3F9FB;    */
+    background: linear-gradient(to right, transparent, #F3F9FB, transparent);
+    margin: 20px auto 0;
     width: 50%;
 }
 
@@ -136,8 +131,9 @@
 }
 
 .doc-card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: .5s ease;
+
     .doc-card-icon,
     .doc-card-info h3 {
         transition: .5s ease;
@@ -178,9 +174,9 @@
 
 .book-btn {
     text-decoration: none;
-    background-color:#226597 ;
+    background-color: #226597;
     color: #F3F9FB;
-    padding: 10px;  
+    padding: 10px;
     border-radius: 15px;
     display: inline-block;
     font-size: 1.5em;
