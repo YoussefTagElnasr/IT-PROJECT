@@ -1,3 +1,4 @@
+/* Global Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -24,6 +25,7 @@
     border-radius: 70px;
 }
 
+/* Doctor Header */
 .doc-icon {
     display: flex;
     justify-content: center;
@@ -62,6 +64,7 @@
     color: #87C0CD;
 }
 
+/* Social icons */
 .social-icons {
     display: flex;
     justify-content: center;
@@ -78,6 +81,7 @@
     transition: .5s ease;
 }
 
+/* About Section */
 .about {
     color: #F3F9FB;
     display: flex;
@@ -88,15 +92,6 @@
 .doc-name {
     font-weight: bold;
     font-size: 30px;
-}
-
-.hr,
-.hr2 {
-    border: none;
-    height: 4px;
-    background: linear-gradient(to right, transparent, #F3F9FB, transparent);
-    margin: 20px auto 0;
-    width: 50%;
 }
 
 .doc-bio p {
@@ -111,6 +106,17 @@
     opacity: .95;
 }
 
+/* HR */
+.hr,
+.hr2 {
+    border: none;
+    height: 4px;
+    background: linear-gradient(to right, transparent, #F3F9FB, transparent);
+    margin: 20px auto 0;
+    width: 50%;
+}
+
+/* Services section */
 .content {
     display: flex;
     justify-content: center;
@@ -132,17 +138,17 @@
 .doc-card:hover {
     transform: scale(1.05);
     transition: .5s ease;
+}
 
-    .doc-card-icon,
-    .doc-card-info h3 {
-        transition: .5s ease;
-        color: #113F67;
-    }
+.doc-card:hover .doc-card-icon,
+.doc-card:hover .doc-card-info h3 {
+    transition: .5s ease;
+    color: #113F67;
+}
 
-    .book-btn {
-        background-color: #113F67;
-        transition: .5s ease;
-    }
+.doc-card:hover .book-btn {
+    background-color: #113F67;
+    transition: .5s ease;
 }
 
 .doc-card-icon {
@@ -187,6 +193,7 @@
     transition: .5s ease;
 }
 
+/* Reviews Section */
 .review-title h2 {
     color: #F3F9FB;
     font-size: 30px;
