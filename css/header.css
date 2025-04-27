@@ -15,7 +15,7 @@ body {
 .header {
     background: linear-gradient(90deg, #4e9fcf, #c7a9ff);
     height: 8%;
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
