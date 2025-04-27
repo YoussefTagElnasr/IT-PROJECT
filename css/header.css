@@ -88,6 +88,7 @@ body {
     height: 40px;
     margin-left: 20px;
     vertical-align: middle;
+    cursor: pointer;
 }
 
 .switch input {
@@ -98,7 +99,7 @@ body {
 
 .slider {
     position: relative;
-    background-color: #ccc;
+    background-color:white;
     border-radius: 34px;
     height: 100%;
     width: 100%;
@@ -136,7 +137,7 @@ body {
     width: 26px;
     left: 5px;
     top: 7px;
-    background-color: white;
+    background-color:rgb(255, 214, 214);
     border-radius: 50%;
     transition: 0.4s;
     z-index: 2; /* Above icons */
