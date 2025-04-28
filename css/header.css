@@ -24,7 +24,7 @@ body {
 .right-links {
     display: flex;
     align-items: center;
-    margin-right: 15px; /* <<< add this line */
+    margin-right: 15px; 
 }
 
 .links {
