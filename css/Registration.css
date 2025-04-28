@@ -97,3 +97,8 @@ body:has(.switch input:checked) .submit-btn button {
 body:has(.switch input:checked) .submit-btn button:hover{
     background-color: #0467a0;
 }
+
+body:has(.switch input:checked) .container{
+    background-color: rgb(235, 235, 235);
+    box-shadow: 0 0 10px rgb(255, 245, 245);
+}
