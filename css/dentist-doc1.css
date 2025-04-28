@@ -7,7 +7,8 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body , html{
+body,
+html {
     overflow-x: hidden;
 }
 
@@ -262,3 +263,51 @@ body , html{
     height: 70px;
     margin: 15px 20px 0 0;
 }
+
+body:has(.switch input:checked) {
+    transition: .3s ease;
+    background-color: #123458;
+}
+
+body:has(.switch input:checked) .blue-background {
+    transition: .3s ease;
+    background-color: #09122C;
+}
+
+body:has(.switch input:checked) .doc-card {
+    transition: .3s ease;
+    background-color: #27548A;
+}
+
+body:has(.switch input:checked) .doc-card-icon,
+body:has(.switch input:checked) .doc-card-info,
+body:has(.switch input:checked) .doc-card-info h3,
+body:has(.switch input:checked) .clinic-name {
+    transition: .3s ease;
+    color: #F3F9FB;
+}
+
+body:has(.switch input:checked) .book-btn {
+    transition: .3s ease;
+    background-color: #09122C
+}
+
+body:has(.switch input:checked) .review-box {
+    transition: .3s ease;
+    background-color: #27548A;
+}
+
+/* Change .comment box color ( didnot like it ) */
+
+/* body:has(.switch input:checked) .comment-box {
+    transition: .3s ease;
+    background-color: #27548A;
+}
+body:has(.switch input:checked) .comment {
+    transition: .3s ease;
+    color: #F3F9FB;
+}
+body:has(.switch input:checked) .comment h2 {
+    transition: .3s ease;
+    color: #F3F9FB;
+} */
