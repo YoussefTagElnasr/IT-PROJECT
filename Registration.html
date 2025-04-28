@@ -29,7 +29,7 @@
         </div>    
       </div>
     <div class="container">
-        <form>
+        <form id="registrationForm">
             <div class="Registration-form">
                 <h1>Registration form</h1>
             </div>
@@ -73,10 +73,20 @@
                 </div>
             </div>
             <div class="submit-btn" id="submit-btn">
-                <button type="submit">submit</button>
+                <button type="submit">Submit</button>
             </div>
         </form>
     </div>
+
+    <!-- Popup message -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h3>Registration Successful!</h3>
+            <p>Your registration was completed successfully.</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
     <script src="js/registration.js"></script>
 </body>
 </html>
