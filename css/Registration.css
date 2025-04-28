@@ -1,3 +1,7 @@
+body{
+    transition: background-color 0.5s ease;
+}
+
 .container {
     margin: auto;
     margin-top: 3%;
@@ -80,4 +84,16 @@
 
 .submit-btn button:hover {
     background-color: #5ab3e6;
+}
+
+body:has(.switch input:checked){
+    background-color: rgb(40, 40, 40);
+}
+
+body:has(.switch input:checked) .submit-btn button {
+    background-color: #023c5e;
+}
+
+body:has(.switch input:checked) .submit-btn button:hover{
+    background-color: #0467a0;
 }

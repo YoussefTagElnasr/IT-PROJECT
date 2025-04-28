@@ -19,6 +19,7 @@ body {
     top: 0;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.5s ease;
 }
 
 .right-links {
@@ -143,10 +144,21 @@ body {
 }
 
 .switch input:checked + .slider {
-    background-color:black;
+    background-color:rgb(0, 0, 0);
 }
 
 .switch input:checked + .slider:before {
     transform: translateX(30px);
 }
 
+.header:has(.switch input:checked){
+    background: linear-gradient(90deg, #023c5e, #7050ac);
+}
+
+.right-links:has(.switch input:checked) .log-in{
+    background-color: #023c5e;
+}
+
+.right-links:has(.switch input:checked) .log-in:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
