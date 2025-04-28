@@ -116,7 +116,6 @@ body {
     pointer-events: none;
 }
 
-/* Place the icons */
 .sun {
     left: 10px;
     color: gold;
@@ -140,10 +139,9 @@ body {
     background-color:rgb(255, 214, 214);
     border-radius: 50%;
     transition: 0.4s;
-    z-index: 2; /* Above icons */
+    z-index: 2;
 }
 
-/* Checked state */
 .switch input:checked + .slider {
     background-color:black;
 }
@@ -152,4 +150,3 @@ body {
     transform: translateX(30px);
 }
 
-/* Switch icons when checked*
