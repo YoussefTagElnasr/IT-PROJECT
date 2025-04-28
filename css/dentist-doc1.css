@@ -297,7 +297,7 @@ body:has(.switch input:checked) .review-box {
     background-color: #27548A;
 }
 
-/* Change .comment box color ( didnot like it ) */
+/* Change .comment box color ( didn't like it ) */
 
 /* body:has(.switch input:checked) .comment-box {
     transition: .3s ease;
@@ -311,3 +311,75 @@ body:has(.switch input:checked) .comment h2 {
     transition: .3s ease;
     color: #F3F9FB;
 } */
+
+/* FORM */
+.form-bg {
+    visibility: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F3F9FB;
+    width: 30em;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(1, 1, 1, 0.5);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+}
+
+.book-form input {
+    padding: 10px;
+    margin: 10px 10px;
+    border: 1px solid #27548A;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.book-form {
+    margin: 20px 0 0 0;
+}
+
+.book-form label {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.age-label {
+    margin-right: 95px;
+}
+
+.date-label {
+    margin-right: 20px;
+}
+
+.book-confirm-btn {
+    margin: 15px 0 20px 0;
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: #113F67;
+    color: #F3F9FB;
+    border: none;
+    cursor: pointer;
+}
+.book-confirm-btn:hover{
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+.book-msg {
+    visibility: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F3F9FB;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(1, 1, 1, 0.5);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: #113F67;
+}

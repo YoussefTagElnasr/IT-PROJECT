@@ -16,23 +16,23 @@
     <!-- header -->
     <div class="header">
         <div class="links">
-          <div class="left-links">
-            <a href="bodyFooter.html" class="logo"><img src="images/clinic2.png"></a>
-          </div>
-          <div class="right-links">
-            <a href="contact.html" class="contact-header">Contact us</a>
-            <a href="login.html" class="log-in">Login</a>
-      
-            <label class="switch">
-              <input type="checkbox">
-              <span class="slider">
-                <span class="icon sun">☀️</span>
-                <span class="icon moon">🌙</span>
-              </span>
-            </label>
-          </div>
-        </div>    
-      </div>
+            <div class="left-links">
+                <a href="bodyFooter.html" class="logo"><img src="images/clinic2.png"></a>
+            </div>
+            <div class="right-links">
+                <a href="contact.html" class="contact-header">Contact us</a>
+                <a href="login.html" class="log-in">Login</a>
+
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider">
+                        <span class="icon sun">☀️</span>
+                        <span class="icon moon">🌙</span>
+                    </span>
+                </label>
+            </div>
+        </div>
+    </div>
 
     <!-- the main profile -->
     <main>
@@ -179,6 +179,32 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </section>
+                    <!-- popup reservation form -->
+                    <section>
+                        <div class="form-bg">
+                            <form action="" class="book-form">
+                                <div>
+                                    <label for="patient-name" class="label">Patient Name: </label>
+                                    <input type="text" required id="patient-name"
+                                        placeholder="Type the patient name...">
+                                </div>
+                                <div>
+                                    <label for="patient-age" class="age-label">Age: </label>
+                                    <input type="number" id="patient-age" required>
+                                </div>
+                                <div>
+                                    <label for="book-date" class="date-label">Reservation Date</label>
+                                    <input required type="date" id="book-date">
+                                </div>
+                                <button type="submit" class="book-confirm-btn">Book Now</button>
+                            </form>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="book-msg">
+                            <h3>Reservation Completed!</h3>
                         </div>
                     </section>
                 </div>
