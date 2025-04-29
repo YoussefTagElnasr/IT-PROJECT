@@ -31,4 +31,7 @@
     box-shadow: 0 6px 18px rgba(199, 169, 255, 0.6); 
     transform: scale(1.05); 
   }
- 
+  body:has(.switch input:checked) .search {
+    transition: 0.3s ease;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
+  }

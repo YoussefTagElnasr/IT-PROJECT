@@ -45,11 +45,11 @@
   border-radius: 35px;
   padding: 20px;
   margin: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
   transition: 0.7s ease;
 }
 .card:hover{
-  transform: scale(1.05);
+ transform: scale(1.03);
 }
 .doc-icon {
   color: #fff;
@@ -62,7 +62,7 @@
 .doctor-info a{
   text-decoration: none;
   color: #fff;
-  font-size:3em ;
+  font-size:2em ;
   display: inline-block;
   margin: 10px;
   font-weight: 700;
@@ -91,4 +91,24 @@ transform: scale(1.1);
   color: #fff;
   margin-top: 8px;
   font-weight: bold;
+}
+body:has(.switch input:checked) {
+  transition: .3s ease;
+  background-color: #09122C;
+}
+body:has(.switch input:checked) .welcome-title h1 {
+  transition: .3s ease;
+  color: #fff;
+}
+body:has(.switch input:checked) .heart-icon {
+  transition: .3s ease;
+  color: #fff;
+}
+body:has(.switch input:checked) .main-title p {
+  transition: .3s ease;
+  color: #fff;
+}
+body:has(.switch input:checked) .card {
+  transition: .3s ease;
+  background-color: #123458;
 }
