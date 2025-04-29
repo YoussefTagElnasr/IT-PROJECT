@@ -297,21 +297,6 @@ body:has(.switch input:checked) .review-box {
     background-color: #27548A;
 }
 
-/* Change .comment box color ( didn't like it ) */
-
-/* body:has(.switch input:checked) .comment-box {
-    transition: .3s ease;
-    background-color: #27548A;
-}
-body:has(.switch input:checked) .comment {
-    transition: .3s ease;
-    color: #F3F9FB;
-}
-body:has(.switch input:checked) .comment h2 {
-    transition: .3s ease;
-    color: #F3F9FB;
-} */
-
 /* FORM */
 .form-bg {
     visibility: hidden;
@@ -354,7 +339,7 @@ body:has(.switch input:checked) .comment h2 {
 }
 
 .book-confirm-btn {
-    margin: 15px 0 20px 0;
+    margin: 15px 5px 20px 0;
     padding: 15px;
     font-size: 25px;
     border-radius: 10px;
@@ -363,10 +348,28 @@ body:has(.switch input:checked) .comment h2 {
     border: none;
     cursor: pointer;
 }
-.book-confirm-btn:hover{
+
+.cancel-btn {
+    margin: 15px 0px 20px 10px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #113F67;
+    color: #F3F9FB;
+    border: none;
+    cursor: pointer;
+}
+
+.cancel-btn:hover {
+    transform: scale(1.05);
+    transition: .5s ease;
+}
+
+.book-confirm-btn:hover {
     transform: scale(1.1);
     transition: .5s ease;
 }
+
 .book-msg {
     visibility: hidden;
     position: fixed;
@@ -382,4 +385,21 @@ body:has(.switch input:checked) .comment h2 {
     justify-content: center;
     font-size: 25px;
     color: #113F67;
+    flex-direction: column;
+}
+
+.book-msg button {
+    padding: 10px;
+    margin: 10px 100px 0;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #113F67;
+    color: #F3F9FB;
+    border: none;
+    border-radius: 10px;
+}
+
+.book-msg button:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
 }
