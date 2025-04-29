@@ -16,7 +16,7 @@ body {
     text-align: center;
     margin: auto;
     width: 767px;
-    color: #003a8b;
+    color: #0080FF;
     font-weight: 400;
 }
 
@@ -47,8 +47,9 @@ body {
 .message-purpose {
 
     padding: 20px;
-    color: #003a8b;
+    color: #0080FF;
     font-weight: 800;
+    font-size: large;
 }
 
 input {
@@ -73,17 +74,18 @@ textarea {
     height: 40px;
     padding-left: 10px;
     margin-top: 10px;
-    color: #00003f;
+    color: grey;
+
 }
 
 .contact-send-button {
     margin-left: 20px;
-    margin-top: 10px ;
+    margin-top: 10px;
     padding: 5px;
     border: none;
     border-radius: 2px;
     color: white;
-    background-color: #003a8b;
+    background-color: #4e9fcf;
     width: 200px;
     height: 40px;
     cursor: pointer;
@@ -109,46 +111,119 @@ textarea {
     margin: auto;
     height: 350px;
     padding: auto;
+    color: #0080FF;
+}
+
+.visit-us p,
+.call-us p,
+.email-us p {
+    margin: 10px 10px 10px 10px;
+    color: black;
 }
 
 .info-container :placeholder-shown {
     padding-left: 10px;
 }
 
+/* black theme */
+
+
+body:has(.switch input:checked) .body {
+    background-color: #023c5e;
+
+
+}
+
+body:has(.switch input:checked) .contact-container {
+    color: white;
+}
+
+body:has(.switch input:checked) .contact-container p {
+    color: lightgrey;
+}
+
+body:has(.switch input:checked) .info-container {
+    background-color: #315784;
+    box-shadow: 0 4px 12px black;
+}
+
+body:has(.switch input:checked) .first-name,
+body:has(.switch input:checked) .second-name,
+body:has(.switch input:checked) .mail,
+body:has(.switch input:checked) .num,
+body:has(.switch input:checked) .message,
+body:has(.switch input:checked) .message-purpose {
+    color: white;
+    font-weight: 500;
+}
+
+body:has(.switch input:checked) .contact-send-button {
+    background-color: #023c5e;
+}
+
+body:has(.switch input:checked) .visit-us,
+body:has(.switch input:checked) .call-us,
+body:has(.switch input:checked) .email-us {
+    color: white;
+}
+
+body:has(.switch input:checked) .visit-us p,
+body:has(.switch input:checked) .call-us p,
+body:has(.switch input:checked) .email-us p {
+    color: lightgray;
+}
+
+body:has(.switch input:checked) .visit-us a,
+body:has(.switch input:checked) .call-us a,
+body:has(.switch input:checked) .email-us a {
+    color: lightblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* footer css */
 .footer {
     height: 6%;
-    background-color: #4e9fcf;   
+    background-color: #4e9fcf;
     color: white;
     text-align: center;
     padding: 5px 0;
     width: 100%;
     position: sticky;
     bottom: 0;
-    left: 0; 
+    left: 0;
     min-height: 30px;
-    font-size: 12px; 
+    font-size: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  
-  .social-icons {
+}
+
+.social-icons {
     display: flex;
     gap: 10px;
-  }
-  
-  .social-icons a {
+}
+
+.social-icons a {
     color: white;
     font-size: larger;
     transition: 0.3s;
-  }
-  
-  .social-icons a:hover {
+}
+
+.social-icons a:hover {
     color: #2c3e50;
-  }
-  
-  
-  
-  
+}
