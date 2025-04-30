@@ -58,6 +58,10 @@ input {
     height: 30px;
     margin-top: 10px;
     padding-left: 10px;
+    border: none;
+    border: 1px solid grey;
+    border-radius: 6px;
+    
 }
 
 textarea {
