@@ -270,17 +270,17 @@ html {
 
 body:has(.switch input:checked) {
     transition: .3s ease;
-    background-color: #123458;
+    background-color: #023c5e;
 }
 
 body:has(.switch input:checked) .blue-background {
     transition: .3s ease;
-    background-color: #09122C;
+    background-color: #315784;
 }
 
 body:has(.switch input:checked) .doc-card {
     transition: .3s ease;
-    background-color: #27548A;
+    background-color: #023c5e;
 }
 
 body:has(.switch input:checked) .doc-card-icon,
@@ -293,12 +293,12 @@ body:has(.switch input:checked) .clinic-name {
 
 body:has(.switch input:checked) .book-btn {
     transition: .3s ease;
-    background-color: #09122C
+    background-color: #315784;
 }
 
 body:has(.switch input:checked) .review-box {
     transition: .3s ease;
-    background-color: #27548A;
+    background-color: #023c5e;
 }
 
 /* FORM */
