@@ -13,13 +13,14 @@ body {
 }
 
 .header {
-    background: linear-gradient(90deg, #4e9fcf, #c7a9ff);
+    background: linear-gradient(90deg, #4e9fcf, #4e9fcf);
     height: 8%;
     position: sticky;
     top: 0;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.5s ease;
+    z-index: 1;
 }
 
 .right-links {
@@ -77,7 +78,7 @@ body {
 }
 
 .header img {
-    width: 50px;
+    width: 40px;
 }
 
 .switch {
@@ -152,7 +153,7 @@ body {
 }
 
 .header:has(.switch input:checked){
-    background: linear-gradient(90deg, #023c5e, #7050ac);
+    background: linear-gradient(90deg, #285067, #0a4567);
 }
 
 .right-links:has(.switch input:checked) .log-in{

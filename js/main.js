@@ -43,13 +43,33 @@ const testimonials = [
 
 const testimonialsContainer = document.getElementById("testimonials-section");
 
+// testimonials.forEach((testimonial) => {
+//   const p = document.createElement("p");
+//   p.textContent = testimonial.text;
+
+//   const strong = document.createElement("strong");
+//   strong.textContent = testimonial.name;
+
+//   testimonialsContainer.appendChild(p);
+//   testimonialsContainer.appendChild(strong);
+// });
+
+
 testimonials.forEach((testimonial) => {
+  // إنشاء عنصر الحاوية لكل تعليق
+  const testimonialDiv = document.createElement("div");
+  testimonialDiv.classList.add("testimonial-box");
+
   const p = document.createElement("p");
   p.textContent = testimonial.text;
 
   const strong = document.createElement("strong");
   strong.textContent = testimonial.name;
 
-  testimonialsContainer.appendChild(p);
-  testimonialsContainer.appendChild(strong);
+  // إضافة النص والاسم إلى العنصر الرئيسي
+  testimonialDiv.appendChild(p);
+  testimonialDiv.appendChild(strong);
+
+  // إضافة العنصر الرئيسي إلى الـ container في الصفحة
+  testimonialsContainer.appendChild(testimonialDiv);
 });

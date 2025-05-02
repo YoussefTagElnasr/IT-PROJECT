@@ -105,6 +105,10 @@ body {
 }
 
 
+.services .card i{
+    color: #4e9fcf;
+}
+
 .card {
     height: 250px;
     background-color: #ffffff;
@@ -125,8 +129,8 @@ body {
 .card p{
     color: #2c3e50;
     font-size: 18px;
-    font-style: italic;
     line-height: 1.6;
+    font-weight: 600;
 }
 
 
@@ -193,9 +197,10 @@ body {
 
 .testimonials {
     height: 200px;
-  overflow-y: auto;
-    background-color: #e7e4e4ab;
+    overflow-y: auto;
+    background-color: #fff;
     margin: 40px auto; 
+    padding-top: 10px;
     bottom: 20px;
     /* padding: 30px 20px; */
     text-align: center;
@@ -203,8 +208,11 @@ body {
     width: 70%; 
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    scrollbar-width: thin;
+    scrollbar-color: #c0d8e5 transparent;
   }
-  
+
+
   .testimonial-header {
     display: flex;
     align-items: center;
@@ -213,13 +221,35 @@ body {
     margin-bottom: 20px;
   }
   
-  .testimonial-header img {
-    width: 35px;
-    height: 35px;
+  .testimonial-header i {
+    width: 10px;
+    height: 20px;
   }
+
+  .testimonial-box {
+    background-color: #f0f4f8; 
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: background-color 0.3s;
+  }
+  
+  .testimonial-box p {
+    margin: 0 0 10px 0;
+    line-height: 1.5;
+  }
+  
+  .testimonial-box strong {
+    display: block;
+    text-align: right;
+    color: #1f1f1f;
+  }
+  
   
   .testimonials p {
     font-style: italic;
+    font-weight: 600;
     color: #444;
   }
 
@@ -255,7 +285,95 @@ body {
   .social-icons a:hover {
     color: #2c3e50;
   }
+
+
   
-  
-  
-  
+              /*****************   Dark Mode  ********************/
+
+body:has(.switch input:checked) {
+    background-color: #0A2647; 
+    color: #e0e0e0;
+}
+
+
+body:has(.switch input:checked) .text-header {
+    background-color: #cfd8dc;
+}
+body:has(.switch input:checked) .testimonial-box {
+    background-color: #cfd8dc;
+}
+
+body:has(.switch input:checked) .section h2 {
+    color: #E0EAF0; 
+}
+
+body:has(.switch input:checked) .card {
+    background-color: #16375c; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); 
+    transition: transform 0.3s ease;
+}
+
+body:has(.switch input:checked) .card:hover {
+    transform: translateY(-5px);
+  }
+
+body:has(.switch input:checked) .card i {
+    color: #4fc3f7; 
+}
+
+body:has(.switch input:checked) .card p {
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body:has(.switch input:checked) .card h3 {
+    color: #4fc3f7;
+}
+
+
+body:has(.switch input:checked) .hours {
+    background-color: #16375c; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); 
+    transition: background-color 0.3s;
+}
+
+
+body:has(.switch input:checked) .testimonials {
+    background-color: #16375c; 
+    scrollbar-width: thin;
+    scrollbar-color: #74b2ce transparent;
+}
+
+
+body:has(.switch input:checked) .testimonials h3 {
+    color: #E0EAF0  ;
+    font-weight: 500;
+}
+
+
+body:has(.switch input:checked) .testimonial-box {
+    background-color: #1B3A57;
+}
+
+
+body:has(.switch input:checked) .testimonial-box strong {
+    color: #5AC8FA;
+}
+
+body:has(.switch input:checked) .testimonials p {
+    color: #E0EAF0;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body:has(.switch input:checked) .footer {
+    background-color: #0d2a3f;
+    color: #b0bec5;
+}
+
+
+body:has(.switch input:checked) .social-icons a:hover {
+    color: #83b9ee;
+}
+
+
