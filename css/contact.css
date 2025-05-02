@@ -61,7 +61,6 @@ input {
     border: none;
     border: 1px solid grey;
     border-radius: 6px;
-    
 }
 
 textarea {
@@ -70,6 +69,7 @@ textarea {
     height: 90px;
     margin-top: 10px;
     padding: 10px;
+    border-radius: 6px;
 }
 
 #purpose-id {
@@ -79,7 +79,7 @@ textarea {
     padding-left: 10px;
     margin-top: 10px;
     color: grey;
-
+    border-radius: 6px;
 }
 
 .contact-send-button {
@@ -133,7 +133,7 @@ textarea {
 
 
 body:has(.switch input:checked) .body {
-    background-color: #023c5e;
+    background-color: #0A2647;
 
 
 }
@@ -143,13 +143,20 @@ body:has(.switch input:checked) .contact-container {
 }
 
 body:has(.switch input:checked) .contact-container p {
-    color: lightgrey;
+    color: #E0EAF0;
 }
 
 body:has(.switch input:checked) .info-container {
-    background-color: #315784;
+    background-color: #16375c;
     box-shadow: 0 4px 12px black;
 }
+
+body:has(.switch input:checked) .info-container input,
+body:has(.switch input:checked) .info-container textarea,
+body:has(.switch input:checked) #purpose-id {
+    background-color: #E0EAF0;
+}
+
 
 body:has(.switch input:checked) .first-name,
 body:has(.switch input:checked) .second-name,
@@ -157,12 +164,13 @@ body:has(.switch input:checked) .mail,
 body:has(.switch input:checked) .num,
 body:has(.switch input:checked) .message,
 body:has(.switch input:checked) .message-purpose {
-    color: white;
+    color: #E0EAF0;
     font-weight: 500;
+
 }
 
 body:has(.switch input:checked) .contact-send-button {
-    background-color: #023c5e;
+    background-color: #0D47A1;
 }
 
 body:has(.switch input:checked) .visit-us,
@@ -174,7 +182,7 @@ body:has(.switch input:checked) .email-us {
 body:has(.switch input:checked) .visit-us p,
 body:has(.switch input:checked) .call-us p,
 body:has(.switch input:checked) .email-us p {
-    color: lightgray;
+    color: #E0EAF0;
 }
 
 body:has(.switch input:checked) .visit-us a,
