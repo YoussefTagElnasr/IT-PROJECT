@@ -1,0 +1,221 @@
+/* Reset default margins and set full height */
+body,
+html {
+  transition: 200ms ease-in-out;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Main heading style */
+.main-title {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* Subtitle text */
+.subtitle {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.6); /* Light/faded color */
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+/* Center the container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Box styling */
+.box {
+  justify-items: center;
+  background-color: #ffffff;
+  padding: 5px 12.5px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(78, 159, 207, 0.5);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  min-width: 150px;
+  text-align: center;
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: rgba(0, 0, 0, 0.6); /* ~60% opacity for a faded look */
+  max-width: 200px;
+}
+
+/* Hover effects */
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(1, 44, 75, 0.1);
+  border-color: #aaa;
+}
+
+/* Link styling */
+.box a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: block;
+}
+
+/* Doctor Image */
+.doc-pic {
+  align-items: center;
+  justify-content: center;
+}
+.box img {
+  display: block;
+  max-width: 200px;
+  max-height: 200px;
+  margin-bottom: 2px;
+}
+
+/* Optional: Link hover effect */
+.box a:hover {
+  color: #0077cc;
+}
+.rating {
+  font-size: 1.2rem;
+  font-family: Arial, sans-serif;
+  color: #f4c150;
+  transition: 0.7s ease;
+}
+.rating:hover {
+  transform: scale(1.1);
+}
+
+/* Chatbot button */
+.chatbot-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.chatbot-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.chatbot-btn i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* Chat box container */
+.chatbox {
+  position: fixed;
+  bottom: 80px;
+  left: 20px;
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  animation: fadeIn 0.3s ease-in-out;
+  z-index: 999;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.chatbox-header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.chatbox-body {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.chatbox-input {
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.chatbox-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.chatbox-input button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0 15px;
+  cursor: pointer;
+}
+/* dark theme */
+body:has(.switch input:checked) {
+  transition: 200ms ease-in-out;
+  background-color: #023c5e;
+}
+
+body:has(.switch input:checked) .box {
+  background-color: #315784;
+  box-shadow: 0 4px 12px rgb(0, 0, 0);
+}
+
+body:has(.switch input:checked) .box a {
+  color: white;
+}
+
+body:has(.switch input:checked) .description,
+body:has(.switch input:checked) .main-title,
+body:has(.switch input:checked) .subtitle {
+  color: white;
+}
