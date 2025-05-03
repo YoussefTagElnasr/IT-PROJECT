@@ -41,21 +41,19 @@
 }
 .card {
   background-color:#4e9fcf;
-  width: 27.1em;
+  width: 18.1em;
   border-radius: 50px;
   padding: 20px;
   margin: 20px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
   transition: 0.7s ease;
 }
-.card:hover{
- transform: scale(1.03);
-}
-.doc-icon {
+
+/*.doc-icon {
   color: #fff;
   font-size: 11em;
   text-align: center;
-}
+}*/
 .doctor-info {
   text-align: center;
 }
@@ -67,6 +65,7 @@
   margin: 10px;
   font-weight: 700;
   transition: 0.7s ease;
+  text-shadow:1px 1px 5px #226597;
 }
 .doctor-info a:hover{
 transform: scale(1.1);
@@ -99,6 +98,7 @@ body:has(.switch input:checked) {
 body:has(.switch input:checked) .welcome-title h1 {
   transition: .3s ease;
   color: #fff;
+
 }
 body:has(.switch input:checked) .heart-icon {
   transition: .3s ease;
@@ -111,4 +111,23 @@ body:has(.switch input:checked) .main-title p {
 body:has(.switch input:checked) .card {
   transition: .3s ease;
   background-color: #123458;
+}
+body:has(.switch input:checked) .doctor-info a{
+  transition: .3s ease;
+  text-shadow: 1px 1px 5px#09122C;
+}
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: -60px;
+  margin-bottom: 10px;
+}
+
+.doctor-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #123458;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }

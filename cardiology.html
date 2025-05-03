@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/cardiology.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/search-bar.css">
+    <link rel="stylesheet" href="/css/chat-bot.css">
 </head>
 <body>
      <!-- Header Section -->
@@ -50,9 +51,11 @@
       
   <div class="container">
     <div class="card">
-      <div class="doc-icon">
+     <!-- <div class="doc-icon">
         <i class="fa-solid fa-user-doctor"></i>
-    </div>
+    </div>--><div class="image-wrapper">
+        <img src="/images/cardiologist 1.jpg " alt="Doctor" class="doctor-image">
+      </div>
       <div class="doctor-info">
         <a href="#">DR.Ahmed salem</a>
         <p class="description">Specialized in treating heart rhythm disorders and arrhythmias</p>
@@ -70,9 +73,9 @@
     </div>
   
     <div class="card">
-      <div class="doc-icon">
-        <i class="fa-solid fa-user-doctor"></i>
-    </div>
+      <div class="image-wrapper">
+        <img src="/images/cardiologist 2.jpg " alt="Doctor" class="doctor-image">
+      </div>
       <div class="doctor-info">
         <a href="#">DR.Tarek Elkhateb</a>
         <p class="description">Expert in coronary artery disease and heart failure management</p>
@@ -90,9 +93,9 @@
     </div>
   
     <div class="card">
-      <div class="doc-icon">
-        <i class="fa-solid fa-user-doctor"></i>
-    </div>
+      <div class="image-wrapper">
+        <img src="/images/cardiologist 3.jpg " alt="Doctor" class="doctor-image">
+      </div>
       <div class="doctor-info">
         <a href="#">DR.Reem Elharby</a>
         <p class="description">Focuses on preventive cardiology and advanced heart screening</p>
@@ -110,5 +113,29 @@
     </div>
   </div>
   
+      <!-- Chat Bot Toggle Button -->
+      <button class="chatbot-btn" onclick="toggleChatbox()">
+        <i class="fa-solid fa-robot"></i>
+        Mr.Robot
+      </button>
+  
+      <!-- Chat Box -->
+      <div class="chatbox" id="chatbox">
+        <div class="chatbox-header">Chat Bot</div>
+        <div class="chatbox-body">
+          <p><strong>Bot:</strong> Hello! i am ready to debug your concern.</p>
+        </div>
+        <div class="chatbox-input">
+          <input type="text" placeholder="Type your message..." />
+          <button>Send</button>
+        </div>
+      </div>
+      <script>
+        function toggleChatbox() {
+          const chatbox = document.getElementById("chatbox");
+          chatbox.style.display =
+            chatbox.style.display === "flex" ? "none" : "flex";
+        }
+      </script>
 </body>
 </html>
