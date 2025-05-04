@@ -2,28 +2,29 @@
 body,
 html {
   transition: 200ms ease-in-out;
-  height: 100%;
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
   background-color: #f9f9f9;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* Main heading style */
 .main-title {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
   font-size: 2.5rem;
-  color: #333;
+  color: #226597;
 }
 
 /* Subtitle text */
 .subtitle {
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font-size: 1.1rem;
-  color: rgba(0, 0, 0, 0.6); /* Light/faded color */
+  color: rgba(0, 0, 0, 0.6);
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -34,70 +35,40 @@ html {
 .container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-direction: row;
   flex-wrap: wrap;
-  gap: 30px;
 }
-
 .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  background-color: #4e9fcf;
+  width: 19em; 
+  height: 350px; 
+  border-radius: 50px; 
+  margin: 30px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
+  transition: transform 0.7s ease;
 }
 
 /* Box styling */
-.box {
-  justify-items: center;
-  background-color: #ffffff;
-  padding: 5px 12.5px;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(78, 159, 207, 0.5);
-  transition: all 0.3s ease;
-  cursor: pointer;
-  min-width: 150px;
+.doctor-info {
   text-align: center;
 }
-
-.description {
-  margin-top: 10px;
-  font-size: 0.95rem;
-  color: rgba(0, 0, 0, 0.6); /* ~60% opacity for a faded look */
-  max-width: 200px;
-}
-
-/* Hover effects */
-.box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(1, 44, 75, 0.1);
-  border-color: #aaa;
-}
-
-/* Link styling */
-.box a {
+.doctor-info a {
   text-decoration: none;
-  color: #333;
-  font-size: 1.1rem;
-  font-weight: 600;
-  display: block;
+  color: #fff;
+  font-size: 2em;
+  display: inline-block;
+  margin: 10px;
+  font-weight: 700;
+  transition: 0.7s ease;
+  text-shadow: 1px 1px 5px #226597;
 }
-
-/* Doctor Image */
-.doc-pic {
-  align-items: center;
-  justify-content: center;
+.doctor-info a:hover {
+  transform: scale(1.1);
 }
-.box img {
-  display: block;
-  max-width: 200px;
-  max-height: 200px;
-  margin-bottom: 2px;
-}
-
-/* Optional: Link hover effect */
-.box a:hover {
-  color: #0077cc;
+.doctor-info p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 .rating {
   font-size: 1.2rem;
@@ -108,13 +79,34 @@ html {
 .rating:hover {
   transform: scale(1.1);
 }
+.slogan {
+  font-size: 0.9rem;
+  color: #fff;
+  margin-top: 8px;
+  font-weight: bold;
+}
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
+  margin-bottom: 10px;
+}
+
+.doctor-image {
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #123458;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
 
 /* Chatbot button */
 .chatbot-btn {
   position: fixed;
   bottom: 20px;
   left: 20px;
-  background-color: #007bff;
+  background-color: #4e9fcf;
   color: white;
   border: none;
   border-radius: 30px;
@@ -128,7 +120,7 @@ html {
 }
 
 .chatbot-btn:hover {
-  background-color: #0056b3;
+  background-color: #4e9fcf;
   transform: scale(1.05);
 }
 
@@ -167,7 +159,7 @@ html {
 }
 
 .chatbox-header {
-  background-color: #007bff;
+  background-color: #4e9fcf;
   color: white;
   padding: 10px;
   text-align: center;
@@ -193,7 +185,7 @@ html {
 }
 
 .chatbox-input button {
-  background: #007bff;
+  background: #4e9fcf;
   color: white;
   border: none;
   padding: 0 15px;
@@ -242,7 +234,7 @@ body:has(.switch input:checked) {
   background-color: #0a2647;
 }
 
-body:has(.switch input:checked) .box {
+body:has(.switch input:checked) .card {
   background-color: #16375c;
   box-shadow: 0 4px 12px rgb(0, 0, 0);
 }
