@@ -25,9 +25,9 @@ html {
 
 .blue-background {
     background-color: #226597;
-    width: 90%;
+    width: 80%;
     min-height: 100vh;
-    margin: 30px 0 30px;
+    margin: 50px 0;
     box-shadow: 0 3px 20px rgba(1 1 1 / 75%);
     text-align: center;
     padding: 20px;
@@ -39,7 +39,7 @@ html {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    font-size: 200px;
+    height: 300px;
     color: #F3F9FB;
 }
 
@@ -134,7 +134,7 @@ html {
 
 .doc-card {
     background-color: #F3F9FB;
-    width: 21.25em;
+    width: 19em;
     margin: 30px 25px 20px;
     margin-right: 25px;
     padding: 10px;
@@ -299,6 +299,10 @@ body:has(.switch input:checked) .book-btn {
 body:has(.switch input:checked) .review-box {
     transition: .3s ease;
     background-color: #023c5e;
+}
+
+body:has(.switch input:checked) .comment {
+    color: #023c5e;
 }
 
 /* FORM */
