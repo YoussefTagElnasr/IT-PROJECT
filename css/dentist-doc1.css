@@ -336,6 +336,10 @@ body:has(.switch input:checked) .comment {
     font-size: 16px;
 }
 
+body:has(.switch input:checked) .book-form label {
+    color: #023c5e;
+}
+
 .book-form {
     margin: 20px 0 0 0;
 }
