@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.1" />
+    <title>PEDIATRICS</title>
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/category.css" />
+    <link rel="stylesheet" href="css/search-bar.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!--Header Section-->
+    <div class="header">
+      <div class="links">
+        <div class="left-links">
+          <a href="bodyFooter.html" class="logo"
+            ><img src="images/clinic2.png"
+          /></a>
+        </div>
+        <div class="right-links">
+          <a href="contact.html" class="contact-header">Contact us</a>
+          <a href="#serv" class="services-header">Services</a>
+          <a href="#" class="log-in">Login</a>
+
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider">
+              <span class="icon sun">☀️</span>
+              <span class="icon moon">🌙</span>
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!--Search Bar-->
+    <form>
+      <div class="search">
+        <span class="search-icon material-symbols-outlined">search</span>
+        <input
+          class="search-input"
+          type="search"
+          placeholder="Search for a doctor..."
+        />
+      </div>
+    </form>
+
+    <!-- Main Title -->
+    <h1 class="main-title">Welcome to Pediatrics Section</h1>
+    <p class="subtitle">
+        From First Giggles to First Steps, We are Here to Care for Your Child.
+    </p>
+
+    <!-- Cards Section -->
+    <div class="container">
+      <div class="card">
+        <div class="image-wrapper">
+          <img src="images/ped dr 1.jpg" alt="doctor1" class="doctor-image" />
+        </div>
+        <div class="doctor-info">
+          <a href="#"> Dr.Azza Helal</a>
+          <p class="description">caring pediatrician combines expert knowledge with a compassionate approach to ensure your child health.</p>
+          <div class="rating">
+            <!--stars-->
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p class="slogan">Dedicated Doctors, Happy Kids.</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="card">
+          <div class="image-wrapper">
+            <img src="images/ped dr 2.jpg" alt="doctor1" class="doctor-image" />
+          </div>
+          <div class="doctor-info">
+            <a href="#"> Dr.Khaled Hossam</a>
+            <p class="description">provides expert pediatric care with a gentle touch.</p>
+            <div class="rating">
+              <!--stars-->
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p class="slogan">Your Child Health, Our Passion.</p>
+          </div>
+        </div>
+  
+        <div class="container">
+          <div class="card">
+            <div class="image-wrapper">
+              <img src="images/ped dr 3.jpg" alt="doctor1" class="doctor-image" />
+            </div>
+            <div class="doctor-info">
+              <a href="#"> Dr.Hany Essam</a>
+              <p class="description"> offers personalized care to support your child growth and well-being.</p>
+              <div class="rating">
+                <!--stars-->
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p class="slogan">Growing Healthy Kids, One Visit at a Time.</p>
+            </div>
+          </div>
+          </div>
+    
+    <!-- Chat Bot Toggle Button -->
+    <button class="chatbot-btn" onclick="toggleChatbox()">
+      <i class="fa-solid fa-robot"></i>
+      Mr.Robot
+    </button>
+
+    <!-- Chat Box -->
+    <div class="chatbox" id="chatbox">
+      <div class="chatbox-header">Chat Bot</div>
+      <div class="chatbox-body">
+        <p><strong>Bot:</strong> Hello! i am ready to debug your concern.</p>
+      </div>
+      <div class="chatbox-input">
+        <input type="text" placeholder="Type your message..." />
+        <button>Send</button>
+      </div>
+    </div>
+    <script>
+      function toggleChatbox() {
+        const chatbox = document.getElementById("chatbox");
+        chatbox.style.display =
+          chatbox.style.display === "flex" ? "none" : "flex";
+      }
+    </script>
+  </body>
+</html>
