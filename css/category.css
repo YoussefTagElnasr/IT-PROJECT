@@ -1,6 +1,7 @@
 /* Reset default margins and set full height */
 body,
 html {
+  height: 100%;
   transition: 200ms ease-in-out;
   margin: 0;
   padding: 0;
