@@ -10,6 +10,12 @@
 body,
 html {
     overflow-x: hidden;
+    background-image: url('/images/dentists-background.jpg');
+    background-size: cover;       /* Makes image cover the whole page */
+    background-repeat: no-repeat; /* Prevents image from repeating */
+    background-position: center;  /* centers the image */
+    background-attachment: fixed; /*fixes the image while scrolling*/
+  
 }
 
 .header {
