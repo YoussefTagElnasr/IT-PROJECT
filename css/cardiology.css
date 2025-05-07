@@ -93,7 +93,8 @@ transform: scale(1.1);
 }
 body:has(.switch input:checked) {
   transition: .3s ease;
-  background-color: #09122C;
+ /* background-color: #09122C;*/
+ background-color: #0a2647;
 }
 body:has(.switch input:checked) .welcome-title h1 {
   transition: .3s ease;
