@@ -15,6 +15,7 @@ html {
     background-repeat: no-repeat; /* Prevents image from repeating */
     background-position: center;  /* centers the image */
     background-attachment: fixed; /*fixes the image while scrolling*/
+    height: 100%;
   
 }
 
