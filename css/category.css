@@ -1,4 +1,5 @@
 /* Reset default margins and set full height */
+
 body,
 html {
   height: 100%;
@@ -6,7 +7,10 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
   background-color: #f9f9f9;
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -48,7 +52,9 @@ html {
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
   transition: transform 0.7s ease;
 }
-
+.card:hover {
+  transform: translateY(-5px);
+}
 /* Box styling */
 .doctor-info {
   text-align: center;
@@ -207,7 +213,7 @@ html {
 
 .search-input {
   font-size: 16px;
-  font-family: "Lexend", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #333;
   border: none;
   outline: none;
@@ -219,11 +225,13 @@ html {
 .search-icon {
   font-size: 24px;
   color: gray;
+  font-family: "Roboto", sans-serif;
 }
 
 .search:hover {
   box-shadow: 0 6px 18px rgba(199, 169, 255, 0.6);
   transform: scale(1.05);
+  font-family: "Roboto", sans-serif;
 }
 body:has(.switch input:checked) .search {
   transition: 0.3s ease;
