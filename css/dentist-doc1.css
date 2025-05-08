@@ -380,7 +380,7 @@ body:has(.switch input:checked) .book-form label {
     padding: 10px;
     font-size: 15px;
     border-radius: 10px;
-    background-color: #113F67;
+    background-color: rgb(167, 15, 15);
     color: #F3F9FB;
     border: none;
     cursor: pointer;
