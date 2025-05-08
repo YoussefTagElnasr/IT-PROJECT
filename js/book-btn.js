@@ -1,19 +1,18 @@
-document.querySelector('.book-btn').onclick = (e) => {
-    // e.preventDefault();
-    document.querySelector('.form-bg').classList.add('visible');
+document.getElementById('book-link').onclick = (e) => {
+    e.preventDefault();
+    document.getElementById('reservation-form').classList.add('visible');
 };
 
-document.querySelector('.book-form').onsubmit = (e) => {
-    // e.preventDefault();
-    document.querySelector('.form-bg').classList.remove('visible');
-    document.querySelector('.book-msg').classList.add('visible');
+document.getElementById('book-form').onsubmit = (e) => {
+    e.preventDefault();
+    document.getElementById('reservation-form').classList.remove('visible');
+    document.getElementById('confirmation-msg').classList.add('visible');
 };
 
-document.querySelector('.cancel-btn').onclick = (e) => {
-    // e.preventDefault();
-    document.querySelector('.form-bg').classList.remove('visible');
+document.getElementById('cancel-btn').onclick = () => {
+    document.getElementById('reservation-form').classList.remove('visible');
 };
 
-document.querySelector('.book-msg button').onclick = () => {
-    document.querySelector('.book-msg').classList.remove('visible');
+document.getElementById('close-msg-btn').onclick = () => {
+    document.getElementById('confirmation-msg').classList.remove('visible');
 };

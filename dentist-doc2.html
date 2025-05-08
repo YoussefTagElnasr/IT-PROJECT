@@ -67,10 +67,14 @@
                             <h2>About <span class="doc-name">Dr, Salma</span></h2>
                         </div>
                         <div class="doc-bio">
-                            <p>Dr. Salma Mohamed is a dedicated 38 year old dentist with a passion for transforming smiles and enhancing oral health. She holds a Bachelor's Degree in Oral and Dental Medicine from the Egyptian Russian University, obtained in 2019. Currently, she serves as a dentist at the Ministry of Health & Population in Cairo, where she specializes in cosmetic dentistry, pediatric dentistry, and general dental care.
-                                In addition to her clinical practice, Dr. Mohamed is committed to continuous learning and professional development. She has participated in various dental workshops and training programs, focusing on the latest advancements in restorative techniques and patient care.
-                                
-                                Dr. Mohamed's approach to dentistry is patient-centered, emphasizing comfort, trust, and personalized treatment plans. Her dedication to improving her patients' oral health and confidence makes her a respected professional in the dental community.</p>
+                            <p>Dr. Salma Mohamed is an accomplished dentist with over 15 years of experience in clinical
+                                and academic dentistry. She holds a BDS, a Master’s in Prosthodontics, and a PhD in
+                                Dental Biomaterials. Specializing in cosmetic and restorative treatments, Dr. Mohamed is
+                                known for her precision, artistry, and patient-focused care. She has enhanced countless
+                                smiles and shared her expertise through international lectures and published research,
+                                making her a respected voice in modern dentistry.
+
+                            </p>
                         </div>
                     </section>
 
@@ -85,7 +89,8 @@
                                 </div>
                                 <div class="doc-card-info">
                                     <h3>Our Services</h3>
-                                    <p>Whitening, Braces, Dental Implants, Gum Surgery, Dental Sealants, Cleaning and Dental Prosthesis.</p>
+                                    <p>Whitening, Braces, Dental Implants, Gum Surgery, Dental Sealants, Cleaning and
+                                        Dental Prosthesis.</p>
                                 </div>
                             </div>
                             <div class="doc-card">
@@ -104,7 +109,7 @@
                                 </div>
                                 <div class="doc-card-info">
                                     <h3 class="clinic-name">HealU Clinic</h3>
-                                    <a class="book-btn" href="#">Book Now</a>
+                                    <a id="book-link" class="book-btn" href="#">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -122,7 +127,7 @@
                             <div class="comment-box">
                                 <div class="comment-section">
                                     <div class="comment">
-                                        <h2>Youssef A.</h2>
+                                        <h2>Youssef T.</h2>
                                         <p>"Appointments often run late, causing inconvenience."</p>
                                     </div>
                                     <div class="stars">
@@ -134,7 +139,8 @@
                                 <div class="comment-section">
                                     <div class="comment">
                                         <h2>Mazen W.</h2>
-                                        <p>"Utilizing the latest dental technologies, Dr. Mohamed ensures efficient and effective treatments."</p>
+                                        <p>"Utilizing the latest dental technologies, Dr. Mohamed ensures efficient and
+                                            effective treatments."</p>
                                     </div>
                                     <div class="stars">
                                         <img src="images/5-stars.png" alt="">
@@ -145,7 +151,8 @@
                                 <div class="comment-section">
                                     <div class="comment">
                                         <h2>William G.</h2>
-                                        <p>"She was a bit late, but her clinic is equipped with state-of-the-art technology, ensuring precise diagnostics and effective treatments!"</p>
+                                        <p>"She was a bit late, but her clinic is equipped with state-of-the-art
+                                            technology, ensuring precise diagnostics and effective treatments!"</p>
                                     </div>
                                     <div class="stars">
                                         <img src="images/4-stars.png" alt="">
@@ -156,7 +163,8 @@
                                 <div class="comment-section">
                                     <div class="comment">
                                         <h2>Asmaa O.</h2>
-                                        <p>"She takes the time to explain procedures and options, empowering me to make informed decisions about my dental health."</p>
+                                        <p>"She takes the time to explain procedures and options, empowering me to make
+                                            informed decisions about my dental health."</p>
                                     </div>
                                     <div class="stars">
                                         <img src="images/5-stars.png" alt="">
@@ -178,8 +186,8 @@
                     </section>
                     <!-- popup reservation form -->
                     <section>
-                        <div class="form-bg">
-                            <form action="" class="book-form">
+                        <div id="reservation-form" class="form-bg">
+                            <form id="book-form" action="" class="book-form">
                                 <div>
                                     <label for="patient-name" class="label">Patient Name: </label>
                                     <input type="text" required id="patient-name"
@@ -193,15 +201,15 @@
                                     <label for="book-date" class="date-label">Reservation Date</label>
                                     <input required type="date" id="book-date">
                                 </div>
-                                <button type="submit" class="book-confirm-btn">Book Now</button>
-                                <button class="cancel-btn">Cancel</button>
+                                <button id="confirm-book-btn" type="submit" class="book-confirm-btn">Book Now</button>
+                                <button id="cancel-btn" class="cancel-btn">Cancel</button>
                             </form>
                         </div>
                     </section>
                     <section>
-                        <div class="book-msg">
+                        <div id="confirmation-msg" class="book-msg">
                             <h3>Reservation Completed!</h3>
-                            <button>Close</button>
+                            <button id="close-msg-btn">Close</button>
                         </div>
                     </section>
                 </div>
@@ -210,4 +218,5 @@
     </main>
     <script src="js/book-btn.js"></script>
 </body>
+
 </html>
