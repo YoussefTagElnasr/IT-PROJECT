@@ -12,7 +12,12 @@ function openMismatchPopup() {
 
 function closePopup() {
     document.getElementById('popup').style.display = 'none';
+    document.getElementById('fill-elements').style.display = 'none'
     document.getElementById('matching-passwords').style.display = 'none';
+}
+
+function openReuqiured(){
+    document.getElementById('fill-elements').style.display = 'flex'
 }
 
 function whichEvent(event) {
@@ -24,7 +29,7 @@ function whichEvent(event) {
       const gender = document.querySelector('input[name="gender"]:checked');
   
       if (!fullName || !email || !dob || !gender || !password || !conpassword) {
-          alert("Please fill all required fields!");
+          openReuqiured();
           return;
       }
     

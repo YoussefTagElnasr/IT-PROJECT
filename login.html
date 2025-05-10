@@ -31,14 +31,47 @@
   </div>
   <div class="login-container">
     <h1>Login</h1>
-    <form>
-        <label for="email" class="form-label">Email address</label>
-        <input type="email" id="Email address" placeholder="Email address" required />
-        <label for="password" class="form-label">Password</label>
-        <input type="password" id="password" placeholder="Password" required />
-        <button type="submit">Login</button>
-      </form>
-      
+<form onsubmit="return submitForm()">
+  <label for="email" class="form-label">Email address</label>
+  <input type="email" id="email" placeholder="Email address" />
+
+  <label for="password" class="form-label">Password</label>
+  <input type="password" id="password" placeholder="Password" />
+
+  <button type="submit">Login</button>
+</form>
+
+<div class="popup" id="fill-elements">
+  <div class="popup-content">
+    <h3>Registration Failed</h3>
+    <p>Please fill all the fields</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+</div>
+
+<script>
+  function openPopUp() {
+    document.getElementById('fill-elements').style.display = 'flex';
+  }
+
+  function closePopup() {
+    document.getElementById('fill-elements').style.display = 'none';
+  }
+
+  function submitForm() {
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value.trim();
+
+    if (email && password) {
+      window.location.href = 'bodyFooter.html';
+      return false;
+    }
+
+    openPopUp();
+    return false;
+  }
+</script>
+
     <p class="register-link">
       No account? <a href="Registration.html">Register here</a>
     </p>
