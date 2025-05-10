@@ -106,6 +106,15 @@ body:has(.switch input:checked) .login-container input {
   border: 1px solid #555;
 }
 
+body:has(.switch input:checked) .login-container button{
+  background-color: #0a4567;
+  color: #ffffff;
+}
+body:has(.switch input:checked) .login-container button:hover{
+  background-color: #075886;
+  color: #ffffff;
+}
+
 
   .popup,
   .matching-passwords {
