@@ -10,7 +10,7 @@
 
   input.addEventListener("input", function () {
     const query = this.value.toLowerCase();
-    resultsContainer.innerHTML = ""; // تفضية النتائج
+    resultsContainer.innerHTML = ""; 
 
     if (query.trim() === "") {
       return;
@@ -31,7 +31,6 @@
     });
   });
 
-  // لو المستخدم ضغط خارج البحث نخفي القائمة
   document.addEventListener("click", function (e) {
     if (!document.getElementById("searchForm").contains(e.target)) {
       resultsContainer.innerHTML = "";

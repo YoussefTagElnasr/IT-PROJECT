@@ -1,6 +1,6 @@
 *{
     font-family: 'Roboto' , sans-serif;
-}/* Reset default margins and set full height */
+}
 
 body,
 html {
@@ -9,7 +9,6 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  /*font-family: "Roboto", sans-serif;*/
   font-optical-sizing: auto;
   font-weight: 350;
   font-style: normal;
@@ -18,14 +17,12 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Main heading style */
 .main-title {
   text-align: center;
   margin-top: 20px;
   font-size: 2.5rem;
   color: #226597;
 }
-/* Subtitle text */
 .subtitle {
   text-align: center;
   margin-top: 10px;
@@ -38,7 +35,6 @@ html {
   line-height: 1.5;
 }
 
-/* Center the container */
 .container {
   display: flex;
   justify-content: center;
@@ -57,7 +53,6 @@ html {
 .card:hover {
   transform: translateY(-5px);
 }
-/* Box styling */
 .doctor-info {
   text-align: center;
 }
@@ -110,7 +105,6 @@ html {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Chatbot button */
 .chatbot-btn {
   position: fixed;
   bottom: 20px;
@@ -138,7 +132,6 @@ html {
   font-size: 18px;
 }
 
-/* Chat box container */
 .chatbox {
   position: fixed;
   bottom: 80px;
@@ -239,7 +232,6 @@ body:has(.switch input:checked) .search {
   transition: 0.3s ease;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
 }
-/* dark theme */
 body:has(.switch input:checked) {
   transition: 200ms ease-in-out;
   background-color: #0a2647;

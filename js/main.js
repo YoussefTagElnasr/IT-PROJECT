@@ -44,7 +44,7 @@ const testimonials = [
 const testimonialsContainer = document.getElementById("testimonials-section");
 
 testimonials.forEach((testimonial) => {
-  // إنشاء عنصر الحاوية لكل تعليق
+  
   const testimonialDiv = document.createElement("div");
   testimonialDiv.classList.add("testimonial-box");
 
@@ -54,10 +54,8 @@ testimonials.forEach((testimonial) => {
   const strong = document.createElement("strong");
   strong.textContent = testimonial.name;
 
-  // إضافة النص والاسم إلى العنصر الرئيسي
   testimonialDiv.appendChild(p);
   testimonialDiv.appendChild(strong);
 
-  // إضافة العنصر الرئيسي إلى الـ container في الصفحة
   testimonialsContainer.appendChild(testimonialDiv);
 });
