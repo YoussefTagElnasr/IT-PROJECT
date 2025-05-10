@@ -161,9 +161,9 @@
     <script>
       
   const doctors = [
-    { name: "Dr. Ahmed Salem", url: "cardiologist-doc1.html" },
-    { name: "Dr. Tarek Elkhateb", url: "cardiologist-doc2.html" },
-    { name: "Dr. Reem Elharby", url: "cardiologist-doc3.html" }
+    { name: "Dr.Mohamed Ali", url: "dentist-doc1.html" },
+    { name: "Dr.Salma Mohamed", url: "dentist-doc2.html" },
+    { name: "Dr.Youssef Nagah", url: "dentist-doc3.html" }
   ];
 
   const input = document.getElementById("searchInput");
@@ -171,7 +171,7 @@
 
   input.addEventListener("input", function () {
     const query = this.value.toLowerCase();
-    resultsContainer.innerHTML = ""; // تفضية النتائج
+    resultsContainer.innerHTML = ""; 
 
     if (query.trim() === "") {
       return;
@@ -192,7 +192,6 @@
     });
   });
 
-  // لو المستخدم ضغط خارج البحث نخفي القائمة
   document.addEventListener("click", function (e) {
     if (!document.getElementById("searchForm").contains(e.target)) {
       resultsContainer.innerHTML = "";
