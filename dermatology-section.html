@@ -44,15 +44,12 @@
     </div>
 
     <!--Search Bar-->
-    <form>
+    <form id="searchForm">
       <div class="search">
         <span class="search-icon material-symbols-outlined">search</span>
-        <input
-          class="search-input"
-          type="search"
-          placeholder="Search for a doctor..."
-        />
+        <input class="search-input" type="search" id="searchInput" placeholder="Search for a doctor...">
       </div>
+      <div id="searchResults" class="search-results"></div>
     </form>
 
     <!-- Main Title -->
@@ -148,5 +145,6 @@
           chatbox.style.display === "flex" ? "none" : "flex";
       }
     </script>
+    <script src="/js/search-bar.js"></script>
   </body>
 </html>
