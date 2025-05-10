@@ -11,10 +11,10 @@ body,
 html {
     overflow-x: hidden;
     background-image: url('/images/dentists-background.jpg');
-    background-size: cover;       /* Makes image cover the whole page */
-    background-repeat: no-repeat; /* Prevents image from repeating */
-    background-position: center;  /* centers the image */
-    background-attachment: fixed; /*fixes the image while scrolling*/
+    background-size: cover;     
+    background-repeat: no-repeat; 
+    background-position: center;  
+    background-attachment: fixed; 
     height: 100%;
   
 }
@@ -41,7 +41,6 @@ html {
     border-radius: 70px;
 }
 
-/* Doctor Header */
 .doc-icon {
     display: flex;
     justify-content: center;
@@ -80,7 +79,6 @@ html {
     color: #87C0CD;
 }
 
-/* Social icons */
 .social-icons {
     display: flex;
     justify-content: center;
@@ -97,7 +95,6 @@ html {
     transition: .5s ease;
 }
 
-/* About Section */
 .about {
     color: #F3F9FB;
     display: flex;
@@ -121,7 +118,6 @@ html {
     line-height: 1.6;
 }
 
-/* HR */
 .hr,
 .hr2 {
     border: none;
@@ -131,7 +127,6 @@ html {
     width: 50%;
 }
 
-/* Services section */
 .content {
     display: flex;
     justify-content: center;
@@ -208,7 +203,6 @@ html {
     transition: .5s ease;
 }
 
-/* Reviews Section */
 .review-title h2 {
     color: #F3F9FB;
     font-size: 30px;
@@ -312,7 +306,6 @@ body:has(.switch input:checked) .comment {
     color: #023c5e;
 }
 
-/* FORM */
 .form-bg {
     visibility: hidden;
     opacity: 0;

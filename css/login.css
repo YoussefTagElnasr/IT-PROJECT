@@ -87,7 +87,6 @@ body {
   text-decoration: underline;
 }
 
-/* ========== Dark Theme When Toggle is Checked ========== */
 
 body:has(.switch input:checked) {
   background: linear-gradient(to bottom, #0f172a, #1e1e1e);
