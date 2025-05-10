@@ -39,11 +39,14 @@ body {
     display: inline-block;
     text-decoration: none;
     font-size: 18px;
-    color: #f0f0f0;
     padding: 10px;
     transition: 0.5s ease;
     margin: 20px;
     border-radius: 20px;
+}
+
+.contact-header , .services-header{
+    color: white;
 }
 
 .left-links:hover {
@@ -157,6 +160,7 @@ body {
 
 .right-links:has(.switch input:checked) .log-in{
     background-color: #023c5e;
+    color: white;
 }
 
 .right-links:has(.switch input:checked) .log-in:hover{
