@@ -1,4 +1,6 @@
-/* Reset default margins and set full height */
+*{
+    font-family: 'Roboto' , sans-serif;
+}/* Reset default margins and set full height */
 
 body,
 html {

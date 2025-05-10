@@ -1,10 +1,14 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
+
 html{
   height: 100%;
 }
 
 body {
     transition: background-color 0.5s ease;
-    background-color: #e6f3fc;
+    background-color: #ffffff;
     color: #000;
     background-repeat: no-repeat;
     background-attachment: fixed;
