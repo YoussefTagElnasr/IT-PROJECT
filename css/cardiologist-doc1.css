@@ -527,3 +527,21 @@ body:has(.switch input:checked) .feedback-popup-content {
     background: #2c2c2c;
     color: #fff;
 }
+
+.book-form select {
+    padding: 10px;
+    margin: 10px 10px;
+    border: 1px solid #27548A;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.email-label {
+    margin-right: 60px;
+}
+
+.visit-type-label {
+    margin-right: 120px;
+}

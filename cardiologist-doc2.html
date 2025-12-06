@@ -177,25 +177,41 @@
                             </div>
                         </div>
                     </section>
-                    <!-- popup reservation form -->
                     <section>
                         <div id="reservation-form" class="form-bg">
                             <form id="book-form" action="" class="book-form">
                                 <div>
                                     <label for="patient-name" class="label">Patient Name: </label>
-                                    <input type="text" required id="patient-name"
-                                        placeholder="Type the patient name...">
+                                    <input type="text" required id="patient-name" placeholder="Type the patient name...">
                                 </div>
+
                                 <div>
                                     <label for="patient-age" class="age-label">Age: </label>
                                     <input type="number" id="patient-age" required>
                                 </div>
+
+                                <div>
+                                    <label for="patient-email" class="email-label">Email: </label>
+                                    <input type="email" id="patient-email" required placeholder="Type the email...">
+                                </div>
+
+                                <div>
+                                    <label for="visit-type" class="visit-type-label">Visit Type: </label>
+                                    <select id="visit-type" required>
+                                        <option value="" disabled selected>Select type...</option>
+                                        <option value="checkup">Checkup</option>
+                                        <option value="followup">Follow-up</option>
+                                    </select>
+                                </div>
+
                                 <div>
                                     <label for="book-date" class="date-label">Reservation Date</label>
                                     <input required type="date" id="book-date">
                                 </div>
+
                                 <button id="confirm-book-btn" type="submit" class="book-confirm-btn">Book Now</button>
                                 <button id="cancel-btn" class="cancel-btn">Cancel</button>
+
                             </form>
                         </div>
                     </section>
